@@ -102,7 +102,7 @@ function ChungToiLaAi() {
           </p>
           <div className="ChungToiLaAi__section__headLine__buttonIcon">
             <span className="ChungToiLaAi__section__headLine__buttonIcon__text">
-              Cơ hội việc làm{" "}
+              Cơ hội việc làm
             </span>
             <MdOutlineArrowOutward className="ChungToiLaAi__section__headLine__buttonIcon__icon" />
           </div>

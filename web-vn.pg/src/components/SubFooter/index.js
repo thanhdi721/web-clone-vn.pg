@@ -12,6 +12,7 @@ import { FaFacebook, FaYoutube } from "react-icons/fa";
 
 import "./SubFooter.GlobalStyles.scss";
 import adchoices from "../../assets/images/adchoices.jpg";
+import { Link } from "react-router-dom";
 
 function SubFooter() {
   const [scrolling, setScrolling] = useState(false);
@@ -52,15 +53,21 @@ function SubFooter() {
           <ul className="body__SubFooter__nav__group responsive__group">
             <li className="body__SubFooter__nav__contactus">
               <FiPhone className="body__SubFooter__nav__contactus__icon" />
-              <a href="#" className="body__SubFooter__nav__contactus__text">
+              <Link
+                to="/ContactUs"
+                className="body__SubFooter__nav__contactus__text"
+              >
                 Liên hệ với chúng tôi
-              </a>
+              </Link>
             </li>
             <li className="body__SubFooter__nav__career">
               <FaBriefcase className="body__SubFooter__nav__career__icon" />
-              <a href="#" className="body__ooter__nav__career__text">
+              <Link
+                to="/JobOpportunities"
+                className="body__ooter__nav__career__text"
+              >
                 Cơ hội việc làm
-              </a>
+              </Link>
               <MdOutlineArrowOutward className="body__SubFooter__nav__career__icon" />
             </li>
           </ul>
@@ -69,15 +76,21 @@ function SubFooter() {
               ĐỐI TÁC VÀ NHÀ ĐẦU TƯ
             </label>
             <li className="body__SubFooter__nav__investor">
-              <a href="#" className="body__SubFooter__nav__investor__text">
+              <Link
+                to="/Investors"
+                className="body__SubFooter__nav__investor__text"
+              >
                 Nhà đầu tư
-              </a>
+              </Link>
               <MdOutlineArrowOutward className="body__SubFooter__nav__investor__icon" />
             </li>
             <li className="body__SubFooter__nav__partner">
-              <a href="#" className="body__SubFooter__nav__partner__text">
+              <Link
+                to="/BeOurPartner"
+                className="body__SubFooter__nav__partner__text"
+              >
                 Làm đối tác với chúng tôi
-              </a>
+              </Link>
               <MdOutlineArrowOutward className="body__SubFooter__nav__partner__icon" />
             </li>
             <li className="body__SubFooter__nav__supplier">
@@ -102,14 +115,20 @@ function SubFooter() {
               </a>
             </li>
             <li className="body__SubFooter__nav__policy">
-              <a href="#" className="body__SubFooter__nav__policy__text">
+              <Link
+                to="/PolicyAndEnforcement"
+                className="body__SubFooter__nav__policy__text"
+              >
                 Chính sách & Thực hành
-              </a>
+              </Link>
             </li>
             <li className="body__SubFooter__nav__storage">
-              <a href="#" className="body__SubFooter__nav__storage__text">
+              <Link
+                to="/Storage"
+                className="body__SubFooter__nav__storage__text"
+              >
                 Lưu trữ
-              </a>
+              </Link>
             </li>
             <li className="body__SubFooter__nav__awards">
               <a href="#" className="body__SubFooter__nav__awards__text">
@@ -118,9 +137,9 @@ function SubFooter() {
               <MdOutlineArrowOutward className="body__SubFooter__nav__awards__icon" />
             </li>
             <li className="body__SubFooter__nav__news">
-              <a href="#" className="body__SubFooter__nav__news__text">
+              <Link to="/New" className="body__SubFooter__nav__news__text">
                 Tin tức
-              </a>
+              </Link>
               <MdOutlineArrowOutward className="body__SubFooter__nav__news__icon" />
             </li>
           </ul>
@@ -135,9 +154,12 @@ function SubFooter() {
           <ul className="body__SubFooter__nav__group">
             <label className="body__SubFooter__nav__law">PHÁP LUẬT</label>
             <li className="body__Footer__nav__privacy">
-              <a href="#" className="body__SubFooter__nav__privacy__text">
+              <Link
+                to="/PrivacyNotice"
+                className="body__SubFooter__nav__privacy__text"
+              >
                 Thông báo bảo mật
-              </a>
+              </Link>
               <MdOutlineArrowOutward className="body__SubFooter__nav__privacy__icon" />
             </li>
             <li className="body__SubFooter__nav__conditions">
@@ -147,9 +169,12 @@ function SubFooter() {
               <MdOutlineArrowOutward className="body__SubFooter__nav__conditions__icon" />
             </li>
             <li className="body__SubFooter__nav__adchoices">
-              <a href="#" className="body__SubFooter__nav__adchoices__text">
+              <Link
+                to="/AdChoices"
+                className="body__SubFooter__nav__adchoices__text"
+              >
                 AdChoices
-              </a>
+              </Link>
               <img
                 src={adchoices}
                 alt="adchoices"

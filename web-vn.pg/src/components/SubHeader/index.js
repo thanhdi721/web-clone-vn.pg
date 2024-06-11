@@ -6,6 +6,7 @@ import { IoIosArrowForward } from "react-icons/io";
 
 import "./SubHeader.GlobalStyles.scss";
 import logo from "../../assets/images/P_G_Logo.png";
+import { Link } from "react-router-dom";
 
 function SubHeader() {
   const [isSearchActive, setIsSearchActive] = useState(false);
@@ -76,19 +77,19 @@ function SubHeader() {
               <ul className="brandLabels__text">Các nhãn hiệu của chúng tôi</ul>
               <ul className="brandLabels__text__hidden">
                 <li className="brandLabels__text__hidden--text">
-                  <a href="#">Các nhãn hiệu</a>
+                  <Link to="/Brands">Các nhãn hiệu</Link>
                 </li>
                 <li className="brandLabels__text__hidden--text">
-                  <a href="#">Đổi mới</a>
+                  <Link to="/Renewed">Đổi mới</Link>
                 </li>
                 <li className="brandLabels__text__hidden--text">
-                  <a href="#">An toàn sản phẩm</a>
+                  <Link to="/ProductSafety">An toàn sản phẩm</Link>
                 </li>
                 <li className="brandLabels__text__hidden--text">
                   <a href="#">Thành phần</a>
                 </li>
                 <li className="brandLabels__text__hidden--text">
-                  <a href="#">#BECRUELTYFREE</a>
+                  <Link to="/CrueltyFreePage">#BECRUELTYFREE</Link>
                 </li>
               </ul>
               <IoIosArrowDown className="brandLabels__icon" />
@@ -97,17 +98,17 @@ function SubHeader() {
               <ul className="impactLabels__text">Ảnh hưởng của chúng tôi</ul>
               <ul className="impactLabels__text__hidden">
                 <li className="impactLabels__text__hidden--text">
-                  <a href="#">Ảnh hưởng cộng đồng</a>
+                  <Link to="/CommunityInfluence">Ảnh hưởng cộng đồng</Link>
                 </li>
                 <li className="impactLabels__text__hidden--text">
                   <a href="#">Bình đẳng và hòa nhập</a>
                   <IoIosArrowForward className="equality__inclusion" />
                   <ul class="additional__list">
                     <li className="additional__list--text">
-                      <a href="#">Bình đắng giới</a>
+                      <Link to="/GenderEquality">Bình đắng giới</Link>
                     </li>
                     <li className="additional__list--text">
-                      <a href="#">Người khuyết tật</a>
+                      <Link to="/PeopleWithDisabilities">Người khuyết tật</Link>
                     </li>
                     <li className="additional__list--text">
                       <a href="#">LGBTQ+</a>
@@ -119,7 +120,9 @@ function SubHeader() {
                   <IoIosArrowForward className="lasting" />
                   <ul class="additional__list">
                     <li className="additional__list--text">
-                      <a href="#">Làm đẹp có trách nhiệm</a>
+                      <Link to="/ResponsibleBeauty">
+                        Làm đẹp có trách nhiệm
+                      </Link>
                     </li>
                   </ul>
                 </li>
@@ -136,7 +139,7 @@ function SubHeader() {
               <ul className="storyLabels__text">Câu chuyện của chúng tôi </ul>
               <ul className="storyLabels__text__hidden">
                 <li className="storyLabels__text__hidden--text">
-                  <a href="#">Chúng tôi là ai</a>
+                  <Link to="/WhoAreWe">Chúng tôi là ai</Link>
                 </li>
               </ul>
               <IoIosArrowDown className="storyLabels__icon" />
