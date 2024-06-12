@@ -21,6 +21,7 @@ import Storage from "../Page/LuuTru/index.js";
 import NhaDauTu from "../Page/NhaDauTu/index.js";
 import PrivacyNotice from "../Page/ThongBaoBaoMat/index.js";
 import New from "../Page/TinTuc/index.js";
+import CmsAdmin from "../Page/CmsAdmin/index.js";
 export const routes = [
   {
     path: "/",
@@ -114,4 +115,8 @@ export const routes = [
     path: "*",
     page: NotFoundPage,
   },
+  {
+    path: "/CmsAdmin",
+    page: CmsAdmin,
+  }
 ];

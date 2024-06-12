@@ -1,0 +1,319 @@
+.CmsAdmin {
+    width: 100%;
+}
+
+.CmsAdmin__header {
+    width: 100%;
+    height: 70px;
+    background-color: var(--primary-color);
+    display: flex;
+}
+
+.CmsAdmin__header__left {
+    width: 25%;
+}
+
+.CmsAdmin__header__left,
+.CmsAdmin__header__middle,
+.CmsAdmin__header__right {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.CmsAdmin__header__left__logo {
+    width: 70px;
+    height: 70px;
+}
+
+.CmsAdmin__header__middle {
+    width: 50%;
+}
+
+.CmsAdmin__header__middle__heroText {
+    font-size: 24px;
+    font-weight: 600;
+    color: var(--text-color);
+}
+
+.CmsAdmin__header__right {
+    width: 25%;
+    display: flex;
+    align-items: center;
+}
+
+.CmsAdmin__header__right__avatar,
+.CmsAdmin__header__right__nameAdmin,
+.CmsAdmin__header__right__iconArrow {
+    color: var(--text-color);
+}
+
+.CmsAdmin__header__right__nameAdmin {
+    margin-left: 10px;
+    margin-right: 20px;
+}
+
+
+.CmsAdmin__body {
+    width: 100%;
+    // height: 500px;
+    display: flex;
+} 
+
+.CmsAdmin__body__left {
+    width: 25%;
+    // background-color: rgb(235, 235, 235);
+    position: relative;
+}
+
+.CmsAdmin__body__left::before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    border: 1px solid #cacaca;
+    box-shadow: 1px 5px 4px rgba(56, 56, 56, 0.5);
+    right: 0;
+}
+
+.CmsAdmin__body__left__taskbar {
+    width: 80%;
+    margin-top: 20px;
+    margin-left: 15px;
+}
+
+.CmsAdmin__body__left__taskbar__firstItem,
+.CmsAdmin__body__left__taskbar__secondItem,
+.CmsAdmin__body__left__taskbar__thirdItem {
+    margin-bottom: 20px;
+}
+
+.CmsAdmin__body__left__taskbar__title {
+    display: flex;
+    align-items: center;
+    color: var(--primary-color);
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.CmsAdmin__body__left__taskbar__title:hover {
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+.CmsAdmin__body__left__taskbar__title__text {
+}
+
+.CmsAdmin__body__left__taskbar__title__icon {
+    margin-left: 5px;
+}
+
+.CmsAdmin__body__left__taskbar__dropDown {
+    margin-top: 15px;
+    margin-left: 20px;
+}
+
+.CmsAdmin__body__left__taskbar__dropDown__page {
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--primary-color);
+    margin-bottom: 10px;
+}
+
+
+.CmsAdmin__body__left__taskbar__dropDown__page__sub {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.CmsAdmin__body__left__taskbar__dropDown__page__sub__title {}
+
+.CmsAdmin__body__left__taskbar__dropDown__page__sub__icon {
+    margin-left: 5px;
+}
+
+.CmsAdmin__body__left__taskbar__dropDown__page__sub__link {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+}
+
+.CmsAdmin__body__left__taskbar__dropDown__page__sub__text {
+    margin-bottom: 10px;
+}
+
+.CmsAdmin__body__right {
+    width: 75%;
+}
+
+.CmsAdmin__body__right__top {
+    width: 100%;
+    margin: 20px 0;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.CmsAdmin__body__right__top__create {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.CmsAdmin__body__right__top__create__text {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.CmsAdmin__body__right__top__create__background {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: #b9b9b9;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+}
+
+.CmsAdmin__body__right__top__create__background:hover {
+    cursor: pointer;
+    opacity: 0.9;
+}
+
+.CmsAdmin__body__right__top__create__icon {
+    color: black;
+    width: 24px;
+    height: 24px;
+}
+
+.CmsAdmin__body__right__top__searchButton {
+    display: flex;
+    align-items: center;
+}
+
+.CmsAdmin__body__right__top__searchButton__input {
+    width: 400px;
+    height: 40px;
+    padding: 0 14px;
+    border-radius: 20px;
+    border: 1px solid var(--primary-color);
+    outline: none;
+    margin-right: 10px;
+}
+
+.CmsAdmin__body__right__top__searchButton__btn {
+    width: 100px;
+    height: 40px;
+    font-size: 12px;
+    font-weight: 400;
+    border-radius: 20px;
+    background-color: transparent;
+    color: var(--primary-color);
+    border: 1px solid var(--primary-color);
+    overflow: hidden;
+    transition: font-size 0.3s ease;
+}
+
+.CmsAdmin__body__right__top__searchButton__btn:hover {
+    cursor: pointer;
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    font-size: 14px;
+}
+
+.CmsAdmin__body__right__bottom {
+    width: 100%;
+    // height: 1000px;
+    padding: 10px;
+    position: relative;
+}
+
+.CmsAdmin__body__right__bottom::after {
+    content: "";
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    right: 10px;
+    bottom: 10px;
+    border-radius: 20px;
+    border: 1px solid var(--primary-color);
+}
+
+.CmsAdmin__body__right__bottom__title {
+    border: 2px solid var(--primary-color);
+    margin: 20px;
+    padding: 5px 15px;
+    width: calc(100% - 70px);
+    box-sizing: border-box;
+}
+
+.CmsAdmin__body__right__bottom__title__hero,
+.CmsAdmin__body__right__bottom__content__hero {
+    display: flex;
+    align-items: center;
+    // justify-content: space-between;
+}
+
+.CmsAdmin__body__right__bottom__title__hero input,
+.CmsAdmin__body__right__bottom__content__hero input {
+    flex: 0 0 10%;
+}
+
+.CmsAdmin__body__right__bottom__title__hero p,
+.CmsAdmin__body__right__bottom__content__hero span {
+    flex: 1;
+    text-align: left;
+    margin: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.CmsAdmin__body__right__bottom__content {
+    border: 2px solid red;
+    margin: 20px;
+    padding: 5px 15px;
+    width: calc(100% - 70px);
+    /* Đảm bảo chiều rộng cố định */
+    box-sizing: border-box;
+}
+
+.CmsAdmin__body__right__bottom__content__hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+// .CmsAdmin__body__right__bottom__content__hero input {
+//     flex: 0 0 10%;
+// }
+
+.CmsAdmin__body__right__bottom__content__hero span {
+    white-space: normal;
+    /* Cho phép văn bản xuống dòng */
+    word-wrap: break-word;
+    /* Ngắt dòng khi cần thiết */
+    overflow-wrap: break-word;
+}
+
+.CmsAdmin__body__right__bottom__content__hero__icon {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex: 1;
+    margin: 0;
+}
+
+.CmsAdmin__footer {
+    width: 100%;
+    height: 150px;
+    color: var(--text-color);
+    background-color: var(--primary-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
