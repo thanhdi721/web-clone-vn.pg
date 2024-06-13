@@ -38,4 +38,4 @@ HomePage✔
 
 Các Page CMD ADMIN
 Login & Register ✔ ur; : ví dụ (http://localhost:3000/SignInSignUp)
-ADMIN PAGE ❌
+ADMIN PAGE ✔ ur; : ví dụ (http://localhost:3000/CmsAdmin)

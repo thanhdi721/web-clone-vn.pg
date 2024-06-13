@@ -1,5 +1,5 @@
-import Header from '../../components/Header/index';
-import Footer from '../../components/Footer/index';
+import Header from '../../components/SubHeader/index';
+import Footer from '../../components/SubFooter/index';
 import HomePage from '../../components/HomePage/HomePage';
 import React from 'react';
 
